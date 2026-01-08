@@ -141,21 +141,21 @@
 
                                 <!-- Step 2: Project Type -->
                                 <div class="form-step" id="step2">
-                                    <h2 class="step-title">What type of project are you looking for?</h2>
+                                    <h2 class="step-title">What type of Roofing project do you need?</h2>
                                     <div class="option-grid">
-                                        <div class="option-card" onclick="selectOption('projectType', 'complete')">
+                                        <div class="option-card" onclick="selectOption('projectType', 'replace-install')">
                                             <div class="option-icon">
-                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Complete_Remodel-removebg-preview.png" alt="Complete Remodel">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Replace-install-1.png" alt="Replace / Install">
                                             </div>
-                                            <div class="option-label">Complete Remodel</div>
-                                            <input type="radio" name="projectType" value="complete" id="projectType-complete" required>
+                                            <div class="option-label">Replace / Install</div>
+                                            <input type="radio" name="projectType" value="replace-install" id="projectType-replace-install" required>
                                         </div>
-                                        <div class="option-card" onclick="selectOption('projectType', 'partial')">
+                                        <div class="option-card" onclick="selectOption('projectType', 'repair')">
                                             <div class="option-icon">
-                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Partial_Remodel-removebg-preview.png" alt="Partial Remodel">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/11/repair-1.png" alt="Repair">
                                             </div>
-                                            <div class="option-label">Partial Remodel</div>
-                                            <input type="radio" name="projectType" value="partial" id="projectType-partial" required>
+                                            <div class="option-label">Repair</div>
+                                            <input type="radio" name="projectType" value="repair" id="projectType-repair" required>
                                         </div>
                                     </div>
                                     <p class="form-note">By clicking "Get a free Quote" I agree to: (1) receive recurring automated marketing and non-marketing calls, texts, and prerecorded messages at any phone numbers I provide (consent not required to make a purchase, msg & data rates apply, reply STOP to opt-out of texts or HELP for help); and (2) the <a href="https://homezies.com/terms-of-use/" target="_blank" rel="noopener noreferrer">Terms of Use</a>, <a href="https://homezies.com/privacy-notice/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>, and <a href="https://homezies.com/e-sign-consent-disclosure/" target="_blank" rel="noopener noreferrer">California Privacy Notice</a>.</p>
@@ -165,30 +165,51 @@
                                     </div>
                                 </div>
 
-                                <!-- Step 3: Area Selection -->
+                                <!-- Step 3: Material Selection -->
                                 <div class="form-step" id="step3">
-                                    <h2 class="step-title">What area are you remodeling?</h2>
+                                    <h2 class="step-title">What Material do you require on your roof?</h2>
                                     <div class="option-grid">
-                                        <div class="option-card" onclick="selectOption('area', 'bathtub-shower')">
+                                        <div class="option-card" onclick="selectOption('material', 'asphalt')">
                                             <div class="option-icon">
-                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Bathtub_to_Shower-removebg-preview.png" alt="Bathtub to Shower">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Asphalt.png" alt="Asphalt">
                                             </div>
-                                            <div class="option-label">Bathtub to Shower</div>
-                                            <input type="radio" name="area" value="bathtub-shower" id="area-bathtub-shower" required>
+                                            <div class="option-label">Asphalt</div>
+                                            <input type="radio" name="material" value="asphalt" id="material-asphalt" required>
                                         </div>
-                                        <div class="option-card" onclick="selectOption('area', 'shower-upgrade')">
+                                        <div class="option-card" onclick="selectOption('material', 'clay')">
                                             <div class="option-icon">
-                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Shower_Install_Upgrade-removebg-preview.png" alt="Shower Install/Upgrade">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Clay.png" alt="Clay">
                                             </div>
-                                            <div class="option-label">Shower Install/Upgrade</div>
-                                            <input type="radio" name="area" value="shower-upgrade" id="area-shower-upgrade" required>
+                                            <div class="option-label">Clay</div>
+                                            <input type="radio" name="material" value="clay" id="material-clay" required>
                                         </div>
-                                        <div class="option-card" onclick="selectOption('area', 'bathtub-liner')">
+                                        <div class="option-card" onclick="selectOption('material', 'slate')">
                                             <div class="option-icon">
-                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Bathtub_Liner_Upgrade-removebg-preview.png" alt="Bathtub Liner/Upgrade">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Slate.png" alt="Slate">
                                             </div>
-                                            <div class="option-label">Bathtub Liner/Upgrade</div>
-                                            <input type="radio" name="area" value="bathtub-liner" id="area-bathtub-liner" required>
+                                            <div class="option-label">Slate</div>
+                                            <input type="radio" name="material" value="slate" id="material-slate" required>
+                                        </div>
+                                        <div class="option-card" onclick="selectOption('material', 'wood')">
+                                            <div class="option-icon">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Wood.png" alt="Wood">
+                                            </div>
+                                            <div class="option-label">Wood</div>
+                                            <input type="radio" name="material" value="wood" id="material-wood" required>
+                                        </div>
+                                        <div class="option-card" onclick="selectOption('material', 'metal')">
+                                            <div class="option-icon">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/11/Metal.png" alt="Metal">
+                                            </div>
+                                            <div class="option-label">Metal</div>
+                                            <input type="radio" name="material" value="metal" id="material-metal" required>
+                                        </div>
+                                        <div class="option-card" onclick="selectOption('material', 'others')">
+                                            <div class="option-icon">
+                                                <img src="https://homezies.com/wp-content/uploads/2025/06/Im-not-sure.png" alt="Others">
+                                            </div>
+                                            <div class="option-label">Others</div>
+                                            <input type="radio" name="material" value="others" id="material-others" required>
                                         </div>
                                     </div>
                                     <p class="form-note">By clicking "Get a free Quote" I agree to: (1) receive recurring automated marketing and non-marketing calls, texts, and prerecorded messages at any phone numbers I provide (consent not required to make a purchase, msg & data rates apply, reply STOP to opt-out of texts or HELP for help); and (2) the <a href="https://homezies.com/terms-of-use/" target="_blank" rel="noopener noreferrer">Terms of Use</a>, <a href="https://homezies.com/privacy-notice/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>, and <a href="https://homezies.com/e-sign-consent-disclosure/" target="_blank" rel="noopener noreferrer">California Privacy Notice</a>.</p>
@@ -203,17 +224,17 @@
                                     <h2 class="step-title">How soon would you like to start this project?</h2>
                                     <p class="step-subtitle">Choose the timeline for this project.</p>
                                     <div class="option-list">
+                                        <div class="option-item" onclick="selectOption('timeline', '1week')">
+                                            <div class="option-label">Within 1 Week</div>
+                                            <input type="radio" name="timeline" value="1week" id="timeline-1week" required>
+                                        </div>
+                                        <div class="option-item" onclick="selectOption('timeline', '2-3weeks')">
+                                            <div class="option-label">Within 2-3 Weeks</div>
+                                            <input type="radio" name="timeline" value="2-3weeks" id="timeline-2-3weeks" required>
+                                        </div>
                                         <div class="option-item" onclick="selectOption('timeline', '1month')">
-                                            <div class="option-label">Within 1 month</div>
+                                            <div class="option-label">Within a Month</div>
                                             <input type="radio" name="timeline" value="1month" id="timeline-1month" required>
-                                        </div>
-                                        <div class="option-item" onclick="selectOption('timeline', '1-3months')">
-                                            <div class="option-label">1-3 months</div>
-                                            <input type="radio" name="timeline" value="1-3months" id="timeline-1-3months" required>
-                                        </div>
-                                        <div class="option-item" onclick="selectOption('timeline', '4-6months')">
-                                            <div class="option-label">4-6 months</div>
-                                            <input type="radio" name="timeline" value="4-6months" id="timeline-4-6months" required>
                                         </div>
                                     </div>
                                     <p class="form-note">By clicking "Get a free Quote" I agree to: (1) receive recurring automated marketing and non-marketing calls, texts, and prerecorded messages at any phone numbers I provide (consent not required to make a purchase, msg & data rates apply, reply STOP to opt-out of texts or HELP for help); and (2) the <a href="https://homezies.com/terms-of-use/" target="_blank" rel="noopener noreferrer">Terms of Use</a>, <a href="https://homezies.com/privacy-notice/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>, and <a href="https://homezies.com/e-sign-consent-disclosure/" target="_blank" rel="noopener noreferrer">California Privacy Notice</a>.</p>
@@ -323,38 +344,47 @@
                         <div class="slider-track">
                             <div class="project-slide active">
                                 <div class="project-image">
-                                    <img src="https://homezies.com/wp-content/uploads/2025/05/3d-rendering-modern-design-marble-tile-toilet-bathroom_105762-2043.webp" alt="Modern Design Marble Tile Bathroom">
+                                    <img src="https://homezies.com/wp-content/uploads/2025/03/architecture-3320462_1280.jpg" alt="Professional Roofing Architecture">
                                 </div>
                                 <div class="project-overlay">
-                                    <h3>Modern Marble Design</h3>
-                                    <p>Elegant marble tile bathroom with contemporary fixtures</p>
+                                    <h3>Professional Roofing Architecture</h3>
+                                    <p>Expert roofing solutions with architectural excellence and quality craftsmanship</p>
                                 </div>
                             </div>
                             <div class="project-slide">
                                 <div class="project-image">
-                                    <img src="https://homezies.com/wp-content/uploads/2025/05/3d-rendering-modern-black-bathroom-with-luxury-tile-decor_105762-2138-1.webp" alt="Modern Black Bathroom with Luxury Tile">
+                                    <img src="https://homezies.com/wp-content/uploads/2025/03/roofers-2891664_1280.jpg" alt="Expert Roofing Installation">
                                 </div>
                                 <div class="project-overlay">
-                                    <h3>Luxury Black Design</h3>
-                                    <p>Sophisticated black bathroom with premium tile decor</p>
+                                    <h3>Expert Roofing Installation</h3>
+                                    <p>Professional roofers delivering quality installation and superior protection</p>
                                 </div>
                             </div>
                             <div class="project-slide">
                                 <div class="project-image">
-                                    <img src="https://homezies.com/wp-content/uploads/2025/05/minimal-bathroom-interior-design-with-wooden-furniture_53876-129806-1.webp" alt="Minimal Bathroom with Wooden Furniture">
+                                    <img src="https://homezies.com/wp-content/uploads/2025/05/vertical-low-angle-closeup-shot-black-roof-building_181624-10654.webp" alt="Modern Black Roof Design">
                                 </div>
                                 <div class="project-overlay">
-                                    <h3>Minimal Wood Design</h3>
-                                    <p>Clean minimal design with natural wooden accents</p>
+                                    <h3>Modern Black Roof Design</h3>
+                                    <p>Sleek contemporary roofing with premium materials and modern aesthetics</p>
                                 </div>
                             </div>
                             <div class="project-slide">
                                 <div class="project-image">
-                                    <img src="https://homezies.com/wp-content/uploads/2025/05/modern-bathroom-with-smart-home-system-sleek-design_9975-33157.webp" alt="Modern Bathroom with Smart Home System">
+                                    <img src="https://homezies.com/wp-content/uploads/2025/05/cottage-768889_1280-1.webp" alt="Charming Cottage Roofing">
                                 </div>
                                 <div class="project-overlay">
-                                    <h3>Smart Home Bathroom</h3>
-                                    <p>Modern bathroom with integrated smart home technology</p>
+                                    <h3>Charming Cottage Roofing</h3>
+                                    <p>Classic cottage-style roofing with traditional charm and durability</p>
+                                </div>
+                            </div>
+                            <div class="project-slide">
+                                <div class="project-image">
+                                    <img src="https://homezies.com/wp-content/uploads/2025/04/maxresdefault-2.jpg" alt="Quality Roofing Solutions">
+                                </div>
+                                <div class="project-overlay">
+                                    <h3>Quality Roofing Solutions</h3>
+                                    <p>Comprehensive roofing services with expert installation and lasting protection</p>
                                 </div>
                             </div>
                         </div>
@@ -366,6 +396,7 @@
                         <span class="dot" onclick="currentSlide(2)"></span>
                         <span class="dot" onclick="currentSlide(3)"></span>
                         <span class="dot" onclick="currentSlide(4)"></span>
+                        <span class="dot" onclick="currentSlide(5)"></span>
                     </div>
                 </div>
             </div>
@@ -410,12 +441,12 @@
                     <div class="info-section">
                         <div class="info-section-content">
                             <div class="info-icon">
-                                <img src="https://homezies.com/wp-content/uploads/2025/11/Bathroom-Quotes.png" alt="Bathroom Quotes">
+                                <img src="https://homezies.com/wp-content/uploads/2025/11/Inspect.png" alt="Roof Inspection">
                             </div>
                             <div class="info-text">
-                                <h4>Comparing Roofing Quotes</h4>
+                                <h4>When Did You Last Inspect Your Roof?</h4>
                                 <div class="info-text-content">
-                                    <p>Are you considering a complete roof replacement, or are you focused on repairs and maintenance? Whatever your situation, our network of local professionals can guide you in making informed decisions and swiftly and efficiently execute your roofing project. If you're interested in comparing free quotes from local roofing contractors, simply complete the form above to begin your journey towards finding the ideal roofing solution.</p>
+                                    <p>If you're similar to most homeowners, you might not have ventured onto your roof or gained much insight into its condition. The assumption often is that if there's no visible issue during dry weather, everything is fine. However, this line of thinking can be problematic because by the time you recognize potential roof issues, you could already be facing costly water damage. We make it easy to schedule an inspection. Get your instant roof estimate today!</p>
                                 </div>
                                 <button class="info-read-more-btn" aria-expanded="false">
                                     <span class="read-more-text"></span>
@@ -428,12 +459,12 @@
                     <div class="info-section">
                         <div class="info-section-content">
                             <div class="info-icon">
-                                <img src="https://homezies.com/wp-content/uploads/2025/11/Realities-of-Remodel.png" alt="Realities of Remodel">
+                                <img src="https://homezies.com/wp-content/uploads/2025/11/Schedule.png" alt="Schedule Inspection">
                             </div>
                             <div class="info-text">
-                                <h4>Roofing Project Realities</h4>
+                                <h4>Regularly Schedule Roof Inspections with a Professional Contractor</h4>
                                 <div class="info-text-content">
-                                    <p>Planning a roof replacement? Be prepared. A typical residential roof replacement takes 1-3 days, depending on size and complexity. During this time, expect noise, debris, and limited access to certain areas. Professional roofers will protect your property with tarps and cleanup thoroughly. Weather can cause delays, so flexibility is important. Your home remains livable during installation, though you may want to relocate pets during the noisiest periods.</p>
+                                    <p>The age-old saying is that "an ounce of prevention is worth a pound of cure." A skilled roofing contractor can dedicate an hour each year to address minor issues on your roof, preventing potentially costly interior damage to your home. Additionally, they can offer valuable insights on when to prepare for a new roof and assist you in selecting from the various roofing materials available today. If you're planning a complete roof renovation, be sure to plan ahead and let your neighbors know about construction company vehicles parking on the streets!</p>
                                 </div>
                                 <button class="info-read-more-btn" aria-expanded="false">
                                     <span class="read-more-text"></span>
@@ -446,12 +477,14 @@
                     <div class="info-section">
                         <div class="info-section-content">
                             <div class="info-icon">
-                                <img src="https://homezies.com/wp-content/uploads/2025/11/Bathroom-Remodeling.png" alt="Bathroom Remodeling">
+                                <img src="https://homezies.com/wp-content/uploads/2025/11/Selecting.png" alt="Selecting Roofing Materials">
                             </div>
                             <div class="info-text">
-                                <h4>Roofing Basics</h4>
+                                <h4>Selecting The Various Types of Roofing Materials</h4>
                                 <div class="info-text-content">
-                                    <p>A roof replacement requires thorough planning and understanding of materials. Asphalt shingles are the most popular (70-80% of homes) due to cost-effectiveness and 20-30 year lifespan. Metal roofing lasts 40-70 years but costs more upfront. Tile and slate offer premium aesthetics and 50-100 year lifespans but require strong structural support. Consider factors like climate, home style, local building codes, and HOA requirements. Professional installation includes removing old roofing, inspecting and repairing decking, installing underlayment, proper ventilation, and quality workmanship that protects your largest investment.</p>
+                                    <p>When it's time to invest in a new roof, your choice of roofing material can completely transform the look of your home. Opting for standing seam metal can evoke an antique charm that harmonizes well with New England or Colonial Williamsburg aesthetics. Metal shingles can impart a contemporary and sleek appearance, while cedar shakes can give your home a rustic and cozy feel, or at least create that illusion. For those who appreciate Southwestern design, roof tiles may be a consideration, depending on your climate.</p>
+                                    <p style="margin-top: 15px;">Slate, a classic roofing material used for centuries, offers an elegant and timeless appearance that's hard to surpass. However, when assessing roofing material options, don't overlook asphalt shingles simply because you desire something less conventional. Modern asphalt shingles come in a variety of styles, colors, and thicknesses, and many are cost-effective.</p>
+                                    <p style="margin-top: 15px;">Furthermore, you can enhance your home's energy efficiency through your roofing material selection. Certain shingles and metal products are designed to reflect sunlight, reducing your summer cooling costs. It's also worth consulting your roofing contractor about environmentally friendly options, such as synthetic slate and aluminum. Just fill out the form above and we will connect you with a local roofing contractor. They will schedule a time to come by, run an assessment, and give you a free roof estimate if its time for a new roof! There are no obligations.</p>
                                 </div>
                                 <button class="info-read-more-btn" aria-expanded="false">
                                     <span class="read-more-text"></span>
@@ -464,48 +497,13 @@
                     <div class="info-section">
                         <div class="info-section-content">
                             <div class="info-icon">
-                                <img src="https://homezies.com/wp-content/uploads/2025/11/Cost-And-Benefits.png" alt="Cost And Benefits">
+                                <img src="https://homezies.com/wp-content/uploads/2025/11/Pricing.png" alt="Roofing Pricing">
                             </div>
                             <div class="info-text">
-                                <h4>Cost And Benefits</h4>
+                                <h4>Pricing for a Roof Installation</h4>
                                 <div class="info-text-content">
-                                    <p>The average cost of roof replacement ranges from $5,500 to $11,000 for asphalt shingles on a typical 1,700 sq ft home. Metal roofing costs $10,000-$20,000, while premium materials like slate can exceed $30,000. Despite the investment, a new roof provides excellent ROI—Remodeling Magazine reports 60-68% cost recovery at resale. More importantly, it protects your home from water damage, improves energy efficiency, and provides peace of mind. Many insurance companies offer discounts for new roofs. Regional costs vary, with coastal and northern areas typically higher due to weather demands. Get your Free roofing estimate today!</p>
-                                </div>
-                                <button class="info-read-more-btn" aria-expanded="false">
-                                    <span class="read-more-text"></span>
-                                    <span class="read-more-arrow">▼</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info-section">
-                        <div class="info-section-content">
-                            <div class="info-icon">
-                                <img src="https://homezies.com/wp-content/uploads/2025/11/DIY.png" alt="DIY">
-                            </div>
-                            <div class="info-text">
-                                <h4>DIY or Professional Install?</h4>
-                                <div class="info-text-content">
-                                    <p>DIY roofing is strongly discouraged for most homeowners. Roofing work is dangerous—falls from roofs cause thousands of injuries annually. It requires specialized tools, proper safety equipment, and technical knowledge of waterproofing, ventilation, and structural integrity. Mistakes can lead to leaks, void warranties, and costly repairs. Professional roofers are insured, follow building codes, and guarantee their work. The labor cost is worth the safety, quality, and warranty protection. Leave roofing to the professionals.</p>
-                                </div>
-                                <button class="info-read-more-btn" aria-expanded="false">
-                                    <span class="read-more-text"></span>
-                                    <span class="read-more-arrow">▼</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="info-section">
-                        <div class="info-section-content">
-                            <div class="info-icon">
-                                <img src="https://homezies.com/wp-content/uploads/2025/11/Its-Hard-To-Go-.png" alt="It's Hard To Go At It Alone">
-                            </div>
-                            <div class="info-text">
-                                <h4>Finding The Right Roofer</h4>
-                                <div class="info-text-content">
-                                    <p>Finding a reliable roofing contractor is crucial. Ask neighbors with recent roof work about their experiences. Check online reviews, verify licensing and insurance, and get multiple quotes. Beware of storm chasers who appear after weather events—they often disappear before warranty issues arise. If you don't have personal referrals, USA Home Adviser can connect you with vetted, local roofing professionals. We provide valuable information on products, pricing, and trusted contractors in your area. Simply fill out the form above to protect your home with a quality roof.</p>
+                                    <p>The expenses associated with installing a new roof can vary significantly, contingent upon your home's size, style, and the materials you're contemplating. For a standard home, asphalt shingles typically offer the most budget-friendly choice, with costs starting around $160 per roofing square (this is not a normal "square foot"), covering both materials and installation. On the other hand, selecting slate can place you at the upper end of the price range, potentially exceeding $800 per square for a new roof installation.</p>
+                                    <p style="margin-top: 15px;">The encouraging news is that you might have the opportunity to recoup a portion of your new roof expenses. According to Remodeling Magazine's "Cost vs. Value Survey" for 2010, homeowners, on average, could potentially recover approximately 60 percent of their new roof costs when selling their home. It's worth noting that this percentage can vary depending on your home's location.</p>
                                 </div>
                                 <button class="info-read-more-btn" aria-expanded="false">
                                     <span class="read-more-text"></span>
